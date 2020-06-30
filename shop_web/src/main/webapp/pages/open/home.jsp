@@ -19,7 +19,7 @@
     <meta name="keywords" content="marketplace, easy digital download, digital product, digital, html5">
 
 
-    <title>Martplace - Home</title>
+    <title>主页</title>
 
     <!-- inject:css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/animate.css">
@@ -90,8 +90,8 @@ START MENU AREA
                                                     </div>
                                                     <div class="info">
                                                         <p>
-                                                            <span>Anderson</span> added to Favourite
-                                                            <a href="#">Mccarther Coffee Shop</a>
+                                                            <span>安德森</span> 加入收藏
+                                                            <a href="#">麦克阿瑟咖啡店</a>
                                                         </p>
                                                         <p class="time">Just now</p>
                                                     </div>
@@ -184,7 +184,7 @@ START MENU AREA
                                     <div class="dropdowns messaging--dropdown">
                                         <div class="dropdown_module_header">
                                             <h4>My Messages</h4>
-                                            <a href="message.html">View All</a>
+                                            <a href="message.html">查看全部</a>
                                         </div>
 
                                         <div class="messages">
@@ -500,45 +500,45 @@ START MENU AREA
                                     </li>
                                     <li>
                                         <a href="dashboard-setting.html">
-                                            <span class="lnr lnr-cog"></span> Setting</a>
+                                            <span class="lnr lnr-cog"></span> 环境</a>
                                     </li>
                                     <li>
                                         <a href="cart.html">
-                                            <span class="lnr lnr-cart"></span>Purchases</a>
+                                            <span class="lnr lnr-cart"></span>采购</a>
                                     </li>
                                     <li>
                                         <a href="favourites.html">
-                                            <span class="lnr lnr-heart"></span> Favourite</a>
+                                            <span class="lnr lnr-heart"></span> 喜爱</a>
                                     </li>
                                     <li>
                                         <a href="dashboard-add-credit.html">
-                                            <span class="lnr lnr-dice"></span>Add Credits</a>
+                                            <span class="lnr lnr-dice"></span>添加积分</a>
                                     </li>
                                     <li>
                                         <a href="dashboard-statement.html">
-                                            <span class="lnr lnr-chart-bars"></span>Sale Statement</a>
+                                            <span class="lnr lnr-chart-bars"></span>销售声明</a>
                                     </li>
                                     <li>
                                         <a href="dashboard-upload.html">
-                                            <span class="lnr lnr-upload"></span>Upload Item</a>
+                                            <span class="lnr lnr-upload"></span>上传项目</a>
                                     </li>
                                     <li>
                                         <a href="dashboard-manage-item.html">
-                                            <span class="lnr lnr-book"></span>Manage Item</a>
+                                            <span class="lnr lnr-book"></span>管理项目</a>
                                     </li>
                                     <li>
                                         <a href="dashboard-withdrawal.html">
-                                            <span class="lnr lnr-briefcase"></span>Withdrawals</a>
+                                            <span class="lnr lnr-briefcase"></span>提款</a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="lnr lnr-exit"></span>Logout</a>
+                                            <span class="lnr lnr-exit"></span>登出</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="text-center">
-                                <a href="signup.html" class="author-area__seller-btn inline">Become a Seller</a>
+                                <a href="signup.html" class="author-area__seller-btn inline">成为卖家</a>
                             </div>
                         </div>
                     </div>
