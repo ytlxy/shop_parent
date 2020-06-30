@@ -4,6 +4,8 @@ import com.cn.util.DateUtils;
 import lombok.ToString;
 
 import java.util.Date;
+import java.util.List;
+
 @ToString
 public class Shop {
     private Long shop_id;
@@ -13,6 +15,47 @@ public class Shop {
     private String shop_img;
     private Date shop_time;
     private String shop_timeStr;
+    private Integer status;
+    private String statusStr;
+    private Long order_shop;
+    private List<Shop> shops;
+
+    public Long getOrder_shop() {
+        return order_shop;
+    }
+
+    public void setOrder_shop(Long order_shop) {
+        this.order_shop = order_shop;
+    }
+
+    public List<Shop> getShops() {
+        return shops;
+    }
+
+    public void setShops(List<Shop> shops) {
+        this.shops = shops;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getStatusStr() {
+        if (status !=null)
+            if (status ==0)
+                statusStr="关闭";
+            if (status ==1)
+                statusStr="开启";
+        return statusStr;
+    }
+
+    public void setStatusStr(String statusStr) {
+        this.statusStr = statusStr;
+    }
 
     public Long getShop_id() {
         return shop_id;

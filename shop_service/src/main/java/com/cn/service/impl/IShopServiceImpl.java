@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+import java.util.List;
+
 @Service
 @Transactional
 public class IShopServiceImpl implements IShopSerivce {
@@ -14,7 +17,7 @@ public class IShopServiceImpl implements IShopSerivce {
     private ShopDao shopDao;
 
     @Override
-    public Shop findAll() throws Exception {
+    public List<Shop> findAll() throws Exception {
         return shopDao.findAll();
     }
 
@@ -26,5 +29,16 @@ public class IShopServiceImpl implements IShopSerivce {
     @Override
     public void deleteById(Integer id) throws Exception {
         shopDao.deleteById(id);
+    }
+
+    @Override
+    public void findEdit(Shop shop) throws Exception {
+        shopDao.findEdit(shop);
+    }
+
+    @Override
+    public void addShop(Shop shop) throws Exception {
+        shop.setShop_time(new Date());
+        shopDao.addShop(shop);
     }
 }
