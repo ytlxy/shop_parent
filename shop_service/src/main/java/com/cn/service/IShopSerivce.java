@@ -14,4 +14,8 @@ public interface IShopSerivce {
     public void findEdit(Shop shop) throws Exception;
 
     public void addShop(Shop shop) throws Exception;
+
+    public Integer findAllShopMoney() throws Exception;
+
+    public void findEdit2(Shop shop) throws Exception;
 }

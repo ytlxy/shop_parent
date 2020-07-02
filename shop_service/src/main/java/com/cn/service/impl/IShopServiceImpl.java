@@ -41,4 +41,14 @@ public class IShopServiceImpl implements IShopSerivce {
         shop.setShop_time(new Date());
         shopDao.addShop(shop);
     }
+
+    @Override
+    public Integer findAllShopMoney() throws Exception {
+        return shopDao.findAllShopMoney();
+    }
+
+    @Override
+    public void findEdit2(Shop shop) throws Exception {
+        shopDao.findEdit2(shop);
+    }
 }

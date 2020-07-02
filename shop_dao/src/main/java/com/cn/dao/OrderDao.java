@@ -30,4 +30,7 @@ public interface OrderDao {
 
     @Select("select sum(order_money) from orders")
     public Integer findAllMoney() throws Exception;
+
+    @Select("select count(1) from orders")
+    public Integer findAllOrders() throws Exception;
 }

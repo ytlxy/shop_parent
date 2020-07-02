@@ -14,7 +14,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.ico">
 
-    <link href="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
 
     <!-- App css -->
     <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />

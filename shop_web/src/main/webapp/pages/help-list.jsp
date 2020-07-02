@@ -55,11 +55,11 @@
                     <div class="page-title-box">
                         <div class="float-right">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">商品信息</a></li>
-                                <li class="breadcrumb-item active">订单管理</li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">支持信息</a></li>
+                                <li class="breadcrumb-item active">管理支持信息</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">订单列表</h4>
+                        <h4 class="page-title">支持信息列表</h4>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div>
@@ -69,31 +69,29 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <h4 class="mt-0 header-title">所有订单</h4>
+                            <h4 class="mt-0 header-title">所有支持信息</h4>
                             <p class="text-muted mb-4 font-13">
-                                可用的所有订单.
+                                可用的所有支持信息.
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
                                 <tr>
-                                    <th>订单编号</th>
-                                    <th>商品名称</th>
-                                    <th>商品价格</th>
-                                    <th>订单状态</th>
-                                    <th>修改订单</th>
+                                    <th>信息id</th>
+                                    <th>信息名称</th>
+                                    <th>信息网址</th>
+                                    <th>信息管理</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach items="${orders2}" var="orders">
+                                <c:forEach items="${helps}" var="helps">
                                     <tr>
-                                        <td>${orders.order_id}</td>
-                                        <td>${orders.order_name}</td>
-                                        <td>${orders.order_money}</td>
-                                        <td>${orders.statusStr}</td>
+                                        <td>${helps.help_id}</td>
+                                        <td>${helps.help_name}</td>
+                                        <td>${helps.help_url}</td>
                                         <td class="text-center">
                                                 <%--                                            删除商品--%>
-                                            <a href="${pageContext.request.contextPath}/orders/deleteOrder.do?id=${orders.order_id}"><i class="far fa-trash-alt text-danger"></i></a>
+                                            <a href="${pageContext.request.contextPath}/help/deletehelp.do?id=${helps.help_id}"><i class="far fa-trash-alt text-danger"></i></a>
                                         </td>
                                     </tr>
                                 </c:forEach>

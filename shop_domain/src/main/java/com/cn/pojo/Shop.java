@@ -19,6 +19,29 @@ public class Shop {
     private String statusStr;
     private Long order_shop;
     private List<Shop> shops;
+    private Integer discount;
+    private String discountStr;
+
+    public Integer getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(Integer discount) {
+        this.discount = discount;
+    }
+
+    public String getDiscountStr() {
+        if (discount != null)
+            if (discount == 0)
+                discountStr="未打折";
+            if (discount == 1)
+                discountStr="打折";
+        return discountStr;
+    }
+
+    public void setDiscountStr(String discountStr) {
+        this.discountStr = discountStr;
+    }
 
     public Long getOrder_shop() {
         return order_shop;

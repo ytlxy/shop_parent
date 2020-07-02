@@ -24,7 +24,6 @@
     <!-- DataTables -->
     <link href="${pageContext.request.contextPath}/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="${pageContext.request.contextPath}/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
     <!-- App css -->
     <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="${pageContext.request.contextPath}/assets/css/jquery-ui.min.css" rel="stylesheet">
@@ -82,6 +81,7 @@
                                     <th>商品图片</th>
                                     <th>商品价格</th>
                                     <th>商品状态</th>
+                                    <th>打折状态</th>
                                     <th>修改商品</th>
                                 </tr>
                                 </thead>
@@ -93,6 +93,7 @@
                                         <td>${shop.shop_img}</td>
                                         <td>${shop.shop_money}</td>
                                         <td>${shop.statusStr}</td>
+                                        <td>${shop.discountStr}</td>
                                         <td class="text-center">
 <%--                                            修改商品--%>
                                             <a href="${pageContext.request.contextPath}/shop/findById.do?id=${shop.shop_id}"><i class="far fa-edit text-info mr-1"></i></a>

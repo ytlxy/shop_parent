@@ -1,74 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
   User: hp
-  Date: 2020/6/27
-  Time: 0:10
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<%--<html>--%>
-<%--<head>--%>
-<%--    <title>密码加密</title>--%>
-<%--</head>--%>
-<%--<style>--%>
-<%--    .layui-form-item .layui-input-company {--%>
-<%--        width: auto;--%>
-<%--        padding-right: 10px;--%>
-<%--        line-height: 38px;--%>
-<%--    }--%>
-<%--</style>--%>
-<%--<body>--%>
-
-<%--<div class="layuimini-container layuimini-page-anim">--%>
-<%--    <div class="layuimini-main">--%>
-<%--<form action="${pageContext.request.contextPath}/user/updatepwd.do">--%>
-<%--        <div class="layui-form layuimini-form">--%>
-<%--            <div class="layui-form-item">--%>
-<%--                <label class="layui-form-label required">加密密码</label>--%>
-<%--                <div class="layui-input-block">--%>
-<%--                    <input type="password" name="old_password" lay-verify="required" lay-reqtext="需要加密的密码不能为空" placeholder="请输入旧的密码" value="" class="layui-input">--%>
-<%--                    <tip>填写自己账号的旧的密码。</tip>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="layui-form-item">--%>
-<%--                <div class="layui-input-block">--%>
-<%--                    <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--</form>--%>
-<%--    </div>--%>
-<%--</div>--%>
-
-<%--<script>--%>
-<%--    layui.use(['form', 'miniPage'], function () {--%>
-<%--        var form = layui.form,--%>
-<%--            layer = layui.layer,--%>
-<%--            miniPage = layui.miniPage;--%>
-
-<%--        /**--%>
-<%--         * 初始化表单，要加上，不然刷新部分组件可能会不加载--%>
-<%--         */--%>
-<%--        form.render();--%>
-
-<%--        //监听提交--%>
-<%--        form.on('submit(saveBtn)', function (data) {--%>
-<%--            var index = layer.alert(JSON.stringify(data.field), {--%>
-<%--                title: '最终的提交信息'--%>
-<%--            }, function () {--%>
-<%--                layer.close(index);--%>
-<%--                miniPage.hashHome();--%>
-<%--            });--%>
-<%--            return false;--%>
-<%--        });--%>
-
-<%--    });--%>
-<%--</script>--%>
-<%--</body>--%>
-<%--</html>--%>
-<%--
-  Created by IntelliJ IDEA.
-  User: hp
   Date: 2020/7/2
   Time: 17:41
   To change this template use File | Settings | File Templates.
@@ -112,23 +44,23 @@
                             </div><!--end auth-logo-box-->
 
                             <div class="text-center auth-logo-text">
-                                <h4 class="mt-0 mb-3 mt-5">请输入新的的密码</h4>
-                                <p class="text-muted mb-0">您好，请输入密码 !</p>
+                                <h4 class="mt-0 mb-3 mt-5">请先输入您的账户名</h4>
+                                <p class="text-muted mb-0">你好，请输入账户名以重置密码 !</p>
                             </div> <!--end auth-logo-text-->
 
 
-                            <form class="form-horizontal auth-form my-4" action="${pageContext.request.contextPath}/user/updatepwd.do">
+                            <form class="form-horizontal auth-form my-4" action="${pageContext.request.contextPath}/user/findByname.do" method="post">
                                 <div class="user-thumb text-center m-b-30">
                                     <img src="${pageContext.request.contextPath}/assets/images/users/user-2.jpg" class="rounded-circle img-thumbnail thumb-xl" alt="thumbnail">
                                     <h5>Mark Kearney</h5>
                                 </div>
                                 <div class="form-group">
-                                    <label for="userpassword">密码</label>
+                                    <label for="userpassword">账户名</label>
                                     <div class="input-group mb-3">
                                                 <span class="auth-form-icon">
                                                     <i class="dripicons-lock"></i>
                                                 </span>
-                                        <input type="text" name="password" class="form-control" id="userpassword" placeholder="输入密码">
+                                        <input type="text" name="username" class="form-control" id="userpassword" placeholder="输入账户名">
                                     </div>
                                 </div><!--end form-group-->
 

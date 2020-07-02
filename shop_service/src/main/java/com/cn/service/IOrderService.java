@@ -14,4 +14,6 @@ public interface IOrderService {
     public void addOrder(Orders orders) throws Exception;
 
     public Integer findAllMoney() throws Exception;
+
+    public Integer findAllOrders() throws Exception;
 }

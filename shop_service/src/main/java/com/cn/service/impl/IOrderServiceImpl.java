@@ -38,4 +38,9 @@ public class IOrderServiceImpl implements IOrderService {
     public Integer findAllMoney() throws Exception {
         return orderDao.findAllMoney();
     }
+
+    @Override
+    public Integer findAllOrders() throws Exception {
+        return orderDao.findAllOrders();
+    }
 }

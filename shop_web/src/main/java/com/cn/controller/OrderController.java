@@ -2,6 +2,7 @@ package com.cn.controller;
 
 import com.cn.pojo.Orders;
 import com.cn.service.IOrderService;
+import com.cn.service.IShopSerivce;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,9 @@ import java.util.List;
 public class OrderController {
     @Autowired
     private IOrderService iOrderService;
+
+    @Autowired
+    private IShopSerivce iShopSerivce;
 
     @RequestMapping("/findAll.do")
     public ModelAndView findAll() throws Exception {
@@ -49,7 +53,11 @@ public class OrderController {
     public ModelAndView findAllMoney() throws Exception {
         ModelAndView mv=new ModelAndView();
         Integer orders=iOrderService.findAllMoney();
+        Integer orderss=iOrderService.findAllOrders();
+        Integer shop=iShopSerivce.findAllShopMoney();
         mv.addObject("orders4",orders);
+        mv.addObject("orders5",orderss);
+        mv.addObject("shop1",shop);
         mv.setViewName("order-allMoney");
         return mv;
     }

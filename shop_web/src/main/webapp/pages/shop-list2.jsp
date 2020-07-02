@@ -24,7 +24,6 @@
     <!-- DataTables -->
     <link href="${pageContext.request.contextPath}/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="${pageContext.request.contextPath}/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
     <!-- App css -->
     <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="${pageContext.request.contextPath}/assets/css/jquery-ui.min.css" rel="stylesheet">
@@ -56,10 +55,10 @@
                         <div class="float-right">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">商品信息</a></li>
-                                <li class="breadcrumb-item active">订单管理</li>
+                                <li class="breadcrumb-item active">商品管理</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">订单列表</h4>
+                        <h4 class="page-title">产品列表</h4>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div>
@@ -69,31 +68,33 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <h4 class="mt-0 header-title">所有订单</h4>
+                            <h4 class="mt-0 header-title">产品库存</h4>
                             <p class="text-muted mb-4 font-13">
-                                可用的所有订单.
+                                可用的所有产品.
                             </p>
 
                             <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
                                 <tr>
-                                    <th>订单编号</th>
+                                    <th>商品编号</th>
                                     <th>商品名称</th>
                                     <th>商品价格</th>
-                                    <th>订单状态</th>
-                                    <th>修改订单</th>
+                                    <th>打折状态</th>
+                                    <th>修改状态</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach items="${orders2}" var="orders">
+                                <c:forEach items="${shop}" var="shop">
                                     <tr>
-                                        <td>${orders.order_id}</td>
-                                        <td>${orders.order_name}</td>
-                                        <td>${orders.order_money}</td>
-                                        <td>${orders.statusStr}</td>
+                                        <td>${shop.shop_id}</td>
+                                        <td>${shop.shop_name}</td>
+                                        <td>${shop.shop_money}</td>
+                                        <td>${shop.discountStr}</td>
                                         <td class="text-center">
+                                                <%--                                            修改商品--%>
+                                            <a href="${pageContext.request.contextPath}/shop/findById2.do?id=${shop.shop_id}"><i class="far fa-edit text-info mr-1"></i></a>
                                                 <%--                                            删除商品--%>
-                                            <a href="${pageContext.request.contextPath}/orders/deleteOrder.do?id=${orders.order_id}"><i class="far fa-trash-alt text-danger"></i></a>
+                                            <a href="${pageContext.request.contextPath}/shop/deleteShop.do?id=${shop.shop_id}"><i class="far fa-trash-alt text-danger"></i></a>
                                         </td>
                                     </tr>
                                 </c:forEach>
