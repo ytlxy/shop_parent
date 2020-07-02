@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/shop_domain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_util/src/main/profiles" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_util/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_web/src/main/java" charset="UTF-8" />
   </component>
 </project>

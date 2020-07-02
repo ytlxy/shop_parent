@@ -3,7 +3,6 @@ package com.cn.dao;
 import com.cn.pojo.User;
 import org.apache.ibatis.annotations.*;
 
-import java.util.Date;
 import java.util.List;
 
 public interface UserDao {

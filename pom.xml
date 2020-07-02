@@ -39,9 +39,23 @@
         <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
         <jsr250-api.version>1.0</jsr250-api.version>
         <lombok.version>1.18.12</lombok.version>
+        <spring-data-redis.version>2.2.4.RELEASE</spring-data-redis.version>
+        <commons-pool2.version>2.6.2</commons-pool2.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-data-redis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>${commons-pool2.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

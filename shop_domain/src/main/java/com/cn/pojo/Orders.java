@@ -4,14 +4,57 @@ import com.cn.util.DateUtils;
 import lombok.ToString;
 
 import java.util.Date;
+import java.util.List;
+
 @ToString
-public class Order {
+public class Orders {
     private Long order_id;
     private String order_name;
     private String order_money;
     private String order_synopsis;
     private Date order_time;
     private String order_timeStr;
+    private Shop shops;
+    private Integer status;
+    private String statusStr;
+    private Integer allMoney;
+
+    public Integer getAllMoney() {
+        return allMoney;
+    }
+
+    public void setAllMoney(Integer allMoney) {
+        this.allMoney = allMoney;
+    }
+
+    public Shop getShops() {
+        return shops;
+    }
+
+    public void setShops(Shop shops) {
+        this.shops = shops;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getStatusStr() {
+        if (status !=null)
+            if (status ==0)
+                statusStr="关闭";
+        if (status ==1)
+            statusStr="开启";
+        return statusStr;
+    }
+
+    public void setStatusStr(String statusStr) {
+        this.statusStr = statusStr;
+    }
 
     public Long getOrder_id() {
         return order_id;

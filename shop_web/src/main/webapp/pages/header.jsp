@@ -46,7 +46,7 @@
             </li>
             <li class="hide-phone app-search">
                 <form role="search" class="">
-                    <input type="text" id="AllCompo" placeholder="Search${pageContext.request.contextPath}." class="form-control">
+                    <input type="text" id="AllCompo" placeholder="Search.." class="form-control">
                     <a href=""><i class="fas fa-search"></i></a>
                 </form>
             </li>
