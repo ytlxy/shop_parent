@@ -21,7 +21,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.ico">
 
-    <link href="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/lightpick/lightpick.css"
+    <link href="${pageContext.request.contextPath}/plugins/lightpick/lightpick.css"
           rel="stylesheet"/>
 
     <!-- App css -->

@@ -128,8 +128,8 @@
 <script src="${pageContext.request.contextPath}/assets/js/jquery-ui.min.js"></script>
 
 <!-- Required datatable js -->
-<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="${pageContext.request.contextPath}/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="${pageContext.request.contextPath}/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- App js -->
 <script src="${pageContext.request.contextPath}/assets/js/app.js"></script>

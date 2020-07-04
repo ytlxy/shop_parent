@@ -88,7 +88,7 @@
                                 <tbody>
                                 <c:forEach items="${shop}" var="shop">
                                     <tr>
-                                        <td><input name="ids" type="checkbox"></td>
+                                        <td>${shop.shop_id}</td>
                                         <td>${shop.shop_name}</td>
                                         <td>${shop.shop_img}</td>
                                         <td>${shop.shop_money}</td>

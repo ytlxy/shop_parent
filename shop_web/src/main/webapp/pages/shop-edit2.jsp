@@ -145,8 +145,8 @@
 <script src="${pageContext.request.contextPath}/assets/js/jquery.slimscroll.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/jquery-ui.min.js"></script>
 
-<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/moment/moment.js"></script>
-<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/lightpick/lightpick.js"></script>
+<script src="${pageContext.request.contextPath}/plugins/moment/moment.js"></script>
+<script src="${pageContext.request.contextPath}/plugins/lightpick/lightpick.js"></script>
 <script src="${pageContext.request.contextPath}/assets/pages/jquery.projects_new.init.js"></script>
 
 <!-- App js -->

@@ -22,7 +22,7 @@
                 login-processing-url="/login.do"
                 username-parameter="username"
                 password-parameter="password"
-                default-target-url="/index.jsp"
+                default-target-url="/dispatch.do"
                 authentication-failure-url="/failer.jsp"
                 authentication-success-forward-url="/pages/main.jsp"/>
         <security:csrf disabled="true"/>

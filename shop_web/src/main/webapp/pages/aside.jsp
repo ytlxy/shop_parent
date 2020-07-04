@@ -3,6 +3,9 @@
 <aside>
 <div class="left-sidenav">
     <ul class="metismenu left-sidenav-menu">
+        <li class="nav-item">
+            <a href="${pageContext.request.contextPath}/pages/main.jsp"><i class="ti-home"></i><span>首页</span></a>
+        </li>
         <li>
             <a href="javascript: void(0);"><i class="ti-bar-chart"></i><span>商品信息</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
             <ul class="nav-second-level" aria-expanded="false">

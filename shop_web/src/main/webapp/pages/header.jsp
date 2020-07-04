@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!-- 页面头部 -->
 <header>
     <!-- Top Bar Start -->
@@ -29,9 +29,11 @@
                     <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown"
                        href="#" role="button"
                        aria-haspopup="false" aria-expanded="false">
-                        <img src="${pageContext.request.contextPath}/assets/images/users/user-1.png" alt="profile-user"
+                        <img src="${pageContext.request.contextPath}/assets/images/users/user9.JPG" alt="profile-user"
                              class="rounded-circle"/>
-                        <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                        <security:authentication property="principal.username" var="username"/>
+                        <span class="ml-1 nav-user-name hidden-sm">${username} <i
+                                class="mdi mdi-chevron-down"></i> </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="#"><i class="ti-user text-muted mr-2"></i> 侧面</a>
