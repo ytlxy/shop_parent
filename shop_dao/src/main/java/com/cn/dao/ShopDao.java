@@ -26,8 +26,8 @@ public interface ShopDao {
     @Update("update shop set shop_name=#{shop_name},shop_money=#{shop_money},discount=#{discount} where shop_id=#{shop_id}")
     public void findEdit2(Shop shop) throws Exception;
 
-    @Insert("insert into shop(shop_name,shop_money,shop_synopsis,shop_img,shop_time,status)" +
-            "values(#{shop_name},#{shop_money},#{shop_synopsis},#{shop_img},#{shop_time},1)")
+    @Insert("insert into shop(shop_name,shop_money,shop_synopsis,shop_img,shop_time,status,discount)" +
+            "values(#{shop_name},#{shop_money},#{shop_synopsis},#{shop_img},#{shop_time},1,0)")
     public void addShop(Shop shop) throws Exception;
 
     @Select("select sum(shop_money) from shop")

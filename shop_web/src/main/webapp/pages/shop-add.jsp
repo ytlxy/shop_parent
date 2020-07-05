@@ -91,21 +91,6 @@
                                                     <input type="text" class="form-control" id="pro-start-date"
                                                            placeholder="商品图片(路径)" name="shop_img">
                                                 </div><!--end col-->
-                                                <div class="col-lg-3 col-6">
-                                                    <label for="pro-end-date">商品状态</label>
-                                                    <select class="form-control" name="status">
-                                                        <c:choose>
-                                                            <c:when test="${shops.status ==0}">
-                                                                <option value="0" selected="selected">关闭</option>
-                                                                <option value="1">开启</option>
-                                                            </c:when>
-                                                            <c:otherwise>
-                                                                <option value="0">关闭</option>
-                                                                <option value="1" selected="selected">开启</option>
-                                                            </c:otherwise>
-                                                        </c:choose>
-                                                    </select>
-                                                </div><!--end col-->
                                             </div><!--end row-->
                                         </div><!--end form-group-->
 

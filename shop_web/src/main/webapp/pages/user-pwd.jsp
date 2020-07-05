@@ -17,7 +17,7 @@
     <meta content="" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- App favicon -->
+    <!-- App favicon
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.ico">
 
     <!-- App css -->
