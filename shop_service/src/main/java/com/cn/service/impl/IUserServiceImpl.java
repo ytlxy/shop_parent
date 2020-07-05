@@ -46,7 +46,7 @@ public class IUserServiceImpl implements IUserService {
     }
 
     @Override
-    public User findAll() throws Exception {
+    public List<User> findAll() throws Exception {
         return userDao.findAll();
     }
 
@@ -77,6 +77,11 @@ public class IUserServiceImpl implements IUserService {
         user.setUser_time(new Date());
         userDao.addUser(user);
         userDao.addUserRole(userDao.gitid());
+    }
+
+    @Override
+    public void updataUser(User user) throws Exception {
+        userDao.updataUser(user);
     }
 
 }

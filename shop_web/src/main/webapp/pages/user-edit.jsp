@@ -55,12 +55,12 @@
                     <div class="page-title-box">
                         <div class="float-right">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">商品信息</a></li>
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">商品管理</a></li>
-                                <li class="breadcrumb-item active">商品修改</li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">用户信息</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">用户管理</a></li>
+                                <li class="breadcrumb-item active">用户修改</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">商品修改</h4>
+                        <h4 class="page-title">用户修改</h4>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div>
@@ -73,42 +73,26 @@
                             <p class="text-muted mb-3">创建项目表单样式</p>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form action="${pageContext.request.contextPath}/shop/findEdit2.do">
+                                    <form action="${pageContext.request.contextPath}/user/updatauser.do">
                                         <div class="form-group">
-                                            <label for="projectName">商品名称 :</label>
+                                            <label for="projectName">用户名称 :</label>
                                             <input type="text" class="form-control" id="projectName"
-                                                   aria-describedby="emailHelp" placeholder="输入商品名称" name="shop_name"
-                                                   value="${shops.shop_name}">
+                                                   aria-describedby="emailHelp" placeholder="输入用户名称" name="username"
+                                                   value="${user3.username}">
                                         </div><!--end form-group-->
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-lg-3 col-6 mb-2 mb-lg-0">
-                                                    <label for="pro-end-date">商品价格</label>
+                                                    <label for="pro-end-date">用户邮箱</label>
                                                     <input type="text" class="form-control" id="pro-end-date"
-                                                           placeholder="Enter end date" name="shop_money"
-                                                           value="${shops.shop_money}">
+                                                           placeholder="Enter end date" name="user_email"
+                                                           value="${user3.user_email}">
                                                 </div><!--end col-->
                                                 <div class="col-lg-3 col-6">
                                                     <label for="pro-rate">商品id</label>
                                                     <input type="text" class="form-control" id="pro-rate"
-                                                           placeholder="Enter rate" name="shop_id"
-                                                           value="${shops.shop_id}" readonly="readonly">
-                                                </div><!--end col-->
-                                                <div class="col-lg-3 col-6">
-                                                    <label for="pro-end-date">商品打折信息</label>
-                                                    <select class="form-control" name="discount">
-                                                        <c:choose>
-                                                            <c:when test="${shops.discount ==0}">
-                                                                <option value="0" selected="selected">关闭</option>
-                                                                <option value="1">打折</option>
-                                                            </c:when>
-                                                            <c:otherwise>
-                                                                <option value="0">关闭</option>
-                                                                <option value="1" selected="selected">打折</option>
-                                                            </c:otherwise>
-                                                        </c:choose>
-                                                    </select>
-                                                </div><!--end col-->
+                                                           placeholder="Enter rate" name="id"
+                                                           value="${user3.id}" readonly="readonly">
                                             </div><!--end row-->
                                         </div><!--end form-group-->
 

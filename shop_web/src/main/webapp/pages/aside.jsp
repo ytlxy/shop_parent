@@ -50,6 +50,7 @@
         <li>
             <a href="javascript: void(0);"><i class="ti-lock"></i><span>账户</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
             <ul class="nav-second-level" aria-expanded="false">
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/findAll.do"><i class="ti-control-record"></i>用户管理</a></li>
                 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout.do"><i class="ti-control-record"></i>退出账户</a></li>
                 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/pages/user-pwd.jsp"><i class="ti-control-record"></i>更改密码</a></li>
             </ul>

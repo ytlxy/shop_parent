@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UserDao {
     @Select("select*from user")
-    public User findAll() throws Exception;
+    public List<User> findAll() throws Exception;
 
     @Select("select * from user where id=#{id}")
     @Results({
@@ -51,4 +51,7 @@ public interface UserDao {
 
     @Select("select max(id) from user")
     public Long gitid() throws Exception;
+
+    @Update("update user set username=#{username},user_email=#{user_email} where id=#{id}")
+    public void updataUser(User user) throws Exception;
 }
